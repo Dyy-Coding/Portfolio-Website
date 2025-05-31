@@ -1,24 +1,26 @@
 <?php
 
+
+
 // ✅ Include Core
-require_once __DIR__ . "/../Router.php";
-require_once __DIR__ . "/../Database/Database.php";
+require_once "Router.php";
+require_once "Database/Database.php";
 
 // ✅ Include Models
-require_once __DIR__ . "/../Models/contactSubmissionModel.php";  // fixed typo: cantact → contact
-require_once __DIR__ . "/../Models/usersModel.php";
+require_once "Models/cantactSubmissionModel.php";
+require_once "Models/usersModel.php";
 
 // ✅ Include Base Controller
-require_once __DIR__ . "/../Controllers/BaseController.php";
+require_once "Controllers/BaseController.php";
 
 // ✅ Include Controllers
-require_once __DIR__ . "/../Controllers/skillsController.php";
-require_once __DIR__ . "/../Controllers/projects/projectController.php";
-require_once __DIR__ . "/../Controllers/educationController.php";
-require_once __DIR__ . "/../Controllers/ContactController.php";
-require_once __DIR__ . "/../Controllers/loginController.php";
-require_once __DIR__ . "/../Controllers/dataController.php";
-require_once __DIR__ . "/../Controllers/HomeController.php";
+require_once "Controllers/skillsController.php";
+require_once "Controllers/projects/projectController.php";
+require_once "Controllers/educationController.php";
+require_once "Controllers/ContactController.php";
+require_once "Controllers/loginController.php";
+require_once "Controllers/dataController.php";
+require_once "Controllers/homeController.php";
 
 // ✅ Initialize Router
 $route = new Router();
@@ -54,6 +56,7 @@ $route->get('/Logout', [LoginController::class, 'logout']);     // Handle logout
 
 // ✅ Protected Dashboard
 $route->get('/DataSubmission', [DataController::class, 'message']);
+$route->printRoutes();
 
 // ✅ Route everything
 $route->route();
