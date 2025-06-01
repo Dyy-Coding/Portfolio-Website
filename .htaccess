@@ -1,7 +1,8 @@
+                                                              
 RewriteEngine On
-RewriteBase /Router/
+RewriteBase /
 
-# If the request is not a file or directory, rewrite to index.php
+# If the requested file or directory doesn't exist, route to index.php
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule ^(.*)$ index.php [QSA,L]
