@@ -115,7 +115,7 @@
           Responsible for back-end logic, facial recognition integration, and data handling.
         </p>
         <p class="text-gray-400 text-xs mt-2">📅 Nov 18 – Nov 28, 2024</p>
-        <a href="/faceReconition" class="inline-block mt-4 px-4 py-2 text-xs bg-indigo-600 text-white rounded hover:bg-indigo-700">👀 See More</a>
+        <a href="/faceRecognition" class="inline-block mt-4 px-4 py-2 text-xs bg-indigo-600 text-white rounded hover:bg-indigo-700">👀 See More</a>
       </div>
 
       <!-- Music Website Project -->

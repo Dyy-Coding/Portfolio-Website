@@ -7,11 +7,11 @@ class ProjectController extends BaseController {
         $this->renderView('Project/project', $viewData);
     }
 
-    public function bruchure () {
+    public function brochure () {
         $viewData = [];
         $this->renderView("DataProject/bruchiure/Bruchure",$viewData);
     }
-    public function faceReconition () {
+    public function faceRecognition () {
         $viewData = [];
         $this->renderView("DataProject/faceRoconition/faceRoconition",$viewData);
     }
@@ -23,7 +23,7 @@ class ProjectController extends BaseController {
         $viewData = [];
         $this->renderView("DataProject/ScanningObject/scanning",$viewData);
     }
-    public function wetherApp () {
+    public function weatherApp () {
         $viewData = [];
         $this->renderView("DataProject/wetherApp/wehterApp",$viewData);
     }
